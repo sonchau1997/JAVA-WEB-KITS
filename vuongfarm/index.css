@@ -219,11 +219,13 @@ li {
     grid-template-columns: auto auto auto;
     padding: 20px;
     background-color: #C1DCDC;
+    
 }
 
 .banner4 {
     height: auto;
     text-align: center;
+
 }
 
 .grid-item-banner4-1 {
@@ -240,6 +242,16 @@ li {
     font-size: 20px;
     text-align: center;
     padding-top: 150px;
+}
+.button-with-icon2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .content-top {
