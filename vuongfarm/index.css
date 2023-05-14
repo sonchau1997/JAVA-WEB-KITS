@@ -42,14 +42,13 @@ li {
 }
 
 .banner,
-.banner3,
-.banner4,
 .banner5,
 .article {
     background-color: #efefef;
     height: 10em;
     margin-bottom: 1em;
 }
+
 
 .header {
     display: flex;
@@ -150,10 +149,10 @@ li {
 }
 
 .title-banner2 h2 {
-    /*   font-weight: 700;
+      font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    color: #1e1e1e; */
+    color: #1e1e1e;
 }
 
 .button-with-icon {
@@ -189,6 +188,7 @@ li {
 .banner3 {
     height: 400px;
     text-align: center;
+    background: white;
 }
 
 .grid-container-banner3 {
@@ -198,11 +198,21 @@ li {
 }
 
 .grid-item-banner3 {
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     font-size: 20px;
     text-align: center;
 }
+.background-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1dcdc;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 24px;
+    margin-left: 150px;
+  }
 
 .grid-container-banner4 {
     display: grid;
