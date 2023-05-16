@@ -66,8 +66,57 @@ const function4 = (n) => {
 
 
 }
-function4(9);
+//function4(9);
+//document.getElementById("introduce").style.color="red";
+//document.querySelector(".introduce").style.color="blue";
+const para = document.createElement("p");
+para.innerText = "Hello"
+//const para=document.createElement("BUTTON");
+//const node = document.createTextNode("Hello"); 
+//para.appendChild(node);
+document.body.appendChild(para);
+const myFunction = () => {
+
+    //document.getElementById("myName").style.color = "red";
+    document.getElementById("myName").innerHTML = "Son";
+    alert("ahihi");
+}
+const change = () => {
+    console.log("change");
+}
+const student = ["Vỹ", "Khương", "Quỳnh Anh", "Nhất Anh", "Tiến Anh", "Đức anh"]
+console.log(student);
+console.log('Chiều dài của mảng là:' + "\t" + student.length);
+console.log('vị trí của Nhất Anh là:' + student.indexOf("Nhất Anh"));
+student.shift();
+console.log(student);
+const chuoiten=student.join("-");
+console.log("chuoiten"+chuoiten);
+console.log(Math.round(Math.random()*100));
+const random=(x,y)=>{
+    for(let i=x;i<y;i++){
+      // console.log(Math.random(i)*y%10);
+       
+    }
+    
+    
+
+}
+random(1,100);
 
 
+var seed = 42;
+
+function middleSquareMethod(){
+
+    var result = (seed * seed).toString().padStart(4,"0").slice(1, 3);
+    
+
+    seed = parseInt(result);
+
+    return parseInt(result);
+
+}
+console.log(middleSquareMethod());
 
 
