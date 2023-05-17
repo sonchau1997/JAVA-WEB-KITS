@@ -84,33 +84,33 @@ const myFunction = () => {
 const change = () => {
     console.log("change");
 }
-const student = ["Vỹ", "Khương", "Quỳnh Anh", "Nhất Anh", "Tiến Anh", "Đức anh"]
+const student = ["Vỹ", "Khương", "Quỳnh Anh", "Nhất Anh", "Tiến Anh", "Đức anh"];
 console.log(student);
 console.log('Chiều dài của mảng là:' + "\t" + student.length);
 console.log('vị trí của Nhất Anh là:' + student.indexOf("Nhất Anh"));
 student.shift();
 console.log(student);
-const chuoiten=student.join("-");
-console.log("chuoiten"+chuoiten);
-console.log(Math.round(Math.random()*100));
-const random=(x,y)=>{
-    for(let i=x;i<y;i++){
-      // console.log(Math.random(i)*y%10);
-       
+const chuoiten = student.join("-");
+console.log("chuoiten" + chuoiten);
+console.log(Math.round(Math.random() * 100));
+const random = (x, y) => {
+    for (let i = x; i < y; i++) {
+
+
     }
-    
-    
+
+
 
 }
-random(1,100);
+random(1, 100);
 
 
 var seed = 42;
 
-function middleSquareMethod(){
+function middleSquareMethod() {
 
-    var result = (seed * seed).toString().padStart(4,"0").slice(1, 3);
-    
+    var result = (seed * seed).toString().padStart(4, "0").slice(1, 3);
+
 
     seed = parseInt(result);
 
@@ -118,5 +118,77 @@ function middleSquareMethod(){
 
 }
 console.log(middleSquareMethod());
+
+console.log(!'1');
+//////////////////////////////
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyecolor: "blue"
+};
+console.log(Object.keys(person));
+console.log(Object.values(person));
+//String
+let txt = "DEVERA";
+let length = txt.length;
+txt.slice(0, 3);
+txt.slice(3, 6);
+txt.slice(3)
+txt.replace("DEV", "abc");
+let txt1 = "  Hello world!  ";
+let txt2 = txt1.trim();
+let text = "D,E,V";
+let myArray = text.split(",");
+//
+let originalString = "Lop hoc web cua KITS";
+console.log(originalString);
+console.log(originalString.length);
+console.log(originalString.slice(8, 11));
+//console.log(originalString.replaceAll(" ",","));
+//console.log(originalString.split(","));
+const isDev = s => s.includes('Dev');
+console.log(isDev('Dev web KITS'));
+console.log(isDev('Web KITS'));
+////////////////////////////////
+const isPrime = (n) => {
+
+    if (n < 2) return false;
+    for (let i = 2; i < n / 2; i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+
+
+}
+//document.write(isPrime(47));
+///
+var total = 0;
+const sumNumber = (n) => {
+    for (let i = 1; i <= n; i++) {
+        total = total + i / n;
+    }
+    return total;
+
+
+}
+document.write(sumNumber(4));
+////
+function ValidateEmail()
+{
+    var x = document.getElementById("myEmail").pattern;
+    document.getElementById("demo").innerHTML = x;
+
+}
+
+
+
+
+
+
+
+
 
 

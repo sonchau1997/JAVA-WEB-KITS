@@ -7,7 +7,7 @@
   
     <title>Document</title>
 </head>
-<body>
+<body '>
                           
     <div class="introduce">
         Hello world
@@ -22,6 +22,13 @@
     </div>
     <button onclick="myFunction()">Ok</button>
     <input onchange="change()" type="text" />
+    <br>
+    <form action="#">
+        <label>Email</label>
+        <input id="myEmail"type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <button onclick=" ValidateEmail()">Validate</button>
+    </form>
+    
     
     <script src="main.js"></script>
   
